@@ -1,8 +1,8 @@
 <resources>
-  <string name="app_name">Todo App</string>
-  <string name="delete_all">Delete all</string>
-  <string name="completed_tasks">Completed</string>
-  <string name="pending_tasks">Pending</string>
+  <string name="app_name">Notas App</string>
+  <string name="delete_all">Eliminar todas las tareas</string>
+  <string name="completed_tasks">Completadas</string>
+  <string name="pending_tasks">Pendientes</string>
   <string name="all_tasks_deleted">All tasks delete</string>
   <string name="tasks_deleted">Task Deleted</string>
   <string name="tasks_update">Update Task</string>

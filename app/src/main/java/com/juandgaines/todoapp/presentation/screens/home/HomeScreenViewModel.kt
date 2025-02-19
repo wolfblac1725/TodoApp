@@ -22,7 +22,6 @@ class HomeScreenViewModel @Inject constructor(
     private val taskLocalDataSource : TaskLocalDataSource,
 ): ViewModel() {
     var state by mutableStateOf(HomeDataState())
-        private set
     private val evenChannel = Channel<HomeScreenEvent>()
     val event = evenChannel.receiveAsFlow()
 

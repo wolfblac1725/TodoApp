@@ -8,7 +8,6 @@ hilt = "2.51.1"
 lifecycleRuntimeKtx = "2.8.6"
 activityCompose = "1.9.2"
 ksp = "2.0.0-1.0.22"
-#ksp="1.9.24-1.0.20"
 kotlinx-serialization = "1.6.3"
 coroutines = "1.9.0"
 composeBom = "2024.04.01"
@@ -16,7 +15,6 @@ navigationCompose = "2.8.1"
 navigationComposeHilt = "1.2.0"
 room = "2.6.1"
 uiTextGoogleFonts = "1.7.7"
-navigationRuntimeAndroid = "2.9.0"
 
 
 [libraries]

@@ -48,7 +48,6 @@ import com.juandgaines.todoapp.ui.theme.TodoAppTheme
 
 @Composable
 fun HomeScreenRoot(
-    modifier: Modifier = Modifier,
     navigateToTaskScreen: (String?) -> Unit,
     viewModel: HomeScreenViewModel
 ) {
@@ -81,7 +80,6 @@ fun HomeScreenRoot(
                         Toast.LENGTH_SHORT
                     ).show()
                 }
-                else -> Unit
             }
         }
     }

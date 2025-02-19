@@ -215,6 +215,7 @@ fun TaskScreen(
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.onSurface
                 ),
+                cursorBrush = SolidColor(MaterialTheme.colorScheme.primary),
                 lineLimits = TextFieldLineLimits.SingleLine,
                 modifier = Modifier
                     .fillMaxWidth().
@@ -247,7 +248,7 @@ fun TaskScreen(
                 textStyle = MaterialTheme.typography.bodyLarge.copy(
                     color = MaterialTheme.colorScheme.onSurface
                 ),
-                cursorBrush = SolidColor(MaterialTheme.colorScheme.onSecondary),
+                cursorBrush = SolidColor(MaterialTheme.colorScheme.primary),
                 lineLimits = if(isDescriptionFocused){
                     TextFieldLineLimits.MultiLine(
                         minHeightInLines = 1,

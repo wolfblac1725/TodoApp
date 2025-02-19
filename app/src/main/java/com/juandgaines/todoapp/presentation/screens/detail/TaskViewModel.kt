@@ -27,10 +27,9 @@ class TaskViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle
 ): ViewModel() {
 
-    val taskData = savedStateHandle.toRoute<TaskScreenDes>()
+    private val taskData = savedStateHandle.toRoute<TaskScreenDes>()
 
     var state by mutableStateOf(TaskScreenState())
-        private set
     private val eventsChannel = Channel<EventTask>()
     val events = eventsChannel.receiveAsFlow()
     private val canSaveTask = snapshotFlow { state.taskName.text.toString() }
@@ -79,8 +78,8 @@ class TaskViewModel @Inject constructor(
                     }?:run{
                         val task = Task(
                             id = UUID.randomUUID().toString(),
-                            title = state.taskName.toString(),
-                            description = state.taskDescription.toString(),
+                            title = state.taskName.text.toString(),
+                            description = state.taskDescription.text.toString(),
                             isCompleted = state.isTaskDone,
                             category = state.category
                         )
